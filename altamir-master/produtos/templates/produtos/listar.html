@@ -128,7 +128,19 @@
         </div>
     </footer>
     <!-- Core theme JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('YWx0YW1pcmQ6MzQ0OTUwNGMtNmQwMS00Y2U1LTlkYWItYmNkNjY0YzBkNGEx')
+                    .withButton({"color":"#0096fa","icon":""})
+                    .withCustomCommonUrl('https://altamir-da-cb-cgzgo.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
+                
 </body>
 
 </html>
