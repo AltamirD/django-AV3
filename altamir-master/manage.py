@@ -3,7 +3,7 @@
 import os
 import sys
 
-# ALTAMIR
+# ALTAMIR Dantas
 
 def main():
     """Run administrative tasks."""
